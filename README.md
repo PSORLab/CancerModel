@@ -10,7 +10,24 @@ This repository contains code pertaining to the tumor transport model and its ap
   The CancerModelMTK.jl file contains an updated tumor transport model implemented in ModelingToolkit.jl [7] using MethodOfLines.jl. The model utilizes the analytical solution to pressure. The authors strongly suggest any future applications of this work should utilize the ModelingToolkit model instead of the vanilla Julia model.
 - ### Supplementary Documentation
   A thorough description of the tumor transport model, machine learning surrogate, and optimization problems is documented in Samuel Degnan-Morgenstern's undergraduate thesis included in the supplementary documentation folder.
-
+  
+# Citation
+If you use the Cancer Model in your research, please cite [this paper](https://aiche.onlinelibrary.wiley.com/doi/10.1002/aic.17747?af=R):
+```
+@article{Wang2022,
+         author = {Wang, Chenyu and Degnan-Morgenstern, Samuel and Martin, John D. and Stuber, Matthew D.},
+         title = {Optimal therapy design with tumor microenvironment normalization},
+         journal = {AIChE Journal},
+         volume = {68},
+         number = {8},
+         pages = {e17747},
+         keywords = {deterministic global dynamic optimization, machine learning surrogate, mass transport, nanomedicine, therapy design, tumor microenvironment},
+         doi = {https://doi.org/10.1002/aic.17747},
+         url = {https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.17747},
+         eprint = {https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.17747},
+         year = {2022}
+}
+```
 ## References
 1. Wang, C., Degnan‐Morgenstern, S., Martin, J. D., & Stuber, M. D. **Optimal Therapy Design With Tumor Microenvironment Normalization.** *AIChE Journal*, e17747.
 2. Baxter, L. T., & Jain, R. K. (1989). **Transport of fluid and macromolecules in tumors. I. Role of interstitial pressure and convection.** *Microvascular research*, 37(1), 77-104.
