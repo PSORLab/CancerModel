@@ -1,6 +1,10 @@
 # CancerModel
 This repository contains code pertaining to the tumor transport model and its application in PSOR's recent paper **Optimal Therapy Design with Tumor Microenviornment normalization** [1]. The tumor transport model was originally developed by Baxter and Jain [2-5] and refined in Martin et al. [6]. The model was reimplemented in Julia for the work of Wang et al. [1] and eventually implemented in ModelingToolkit.jl [7] using MethodOfLines.jl.
 
+<p align="center">
+  <img width="530" height="386" src="https://user-images.githubusercontent.com/63276909/182681274-29e5084c-7325-4781-983e-fabbd122c99d.svg" />
+</p>
+
 ## Organization
 - ### Parameter Estimation Problems
   This folder contains code pertaining to the parameter estimation problems solved in Wang et al. [1]. It contains 4 Jupyter notebooks corresponding to each of the 4 ANN surrogate models developed. The notebooks export the ANN surrogate models as .BSON files for use in optimization. Additionally, this folder contains the PE_master.jl file used to perform parameter estimation files and the corresponding utily file surrogate_optimization_functions.jl.
