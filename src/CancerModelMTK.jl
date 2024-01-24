@@ -139,7 +139,7 @@ end
 grid = get_discrete(pdesys, discretization)
 discrete_r = grid[r]
 discrete_t = sol[t]
-Accumulation_Model(sol,101,21,21)
+Accumulation_Model(sol[c(t,r)],101,21,21)
 
 
 using Plots
